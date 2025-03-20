@@ -21,15 +21,17 @@
 	}
 
 	.header_btns_group {
+		width: 70px;
 		gap: 15px;
-		display: flex;
-		align-items: center;
+		// display: inline-flex;
+		// align-items: center;
+		display: none;
 
-		>li {
-			&:first-child {
-				display: none;
-			}
-		}
+		// >li {
+		// 	&:first-child {
+		// 		display: none;
+		// 	}
+		// }
 	}
 
 	.header_btns_group {

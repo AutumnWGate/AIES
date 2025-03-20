@@ -522,7 +522,7 @@ Responsive For Mobile & Tablet Devices
 /* Media Screen 991px - Start
 ================================================== */
 @media screen and (max-width: 991px) {
-	.site_header .header_btns_group > li:first-child {
+	.site_header .header_btns_group{
 		display: inline-block;
 	}
 	.main_menu_list .dropdown-menu {
@@ -752,11 +752,12 @@ Responsive For Mobile & Tablet Devices
 ================================================== */
 @media screen and (max-width: 767px) {
 	.site_header .header_btns_group {
-		>li {
-			&:last-child {
-				display: none;
-			}
-		}
+		display: inline-block;
+		// >li {
+		// 	&:last-child {
+		// 		display: none;
+		// 	}
+		// }
 	}
 	.site_header .site_logo .badge {
 		display: none;
