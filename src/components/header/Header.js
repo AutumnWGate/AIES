@@ -1,45 +1,45 @@
-import React, { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
-import icon1 from '../../images/icons/icon_wifi.svg'
-import icon2 from '../../images/icons/icon_dollar_2.svg'
-import icon3 from '../../images/icons/icon_chart.svg'
-import icon4 from '../../images/icons/icon_tag_2.svg'
-import icon5 from '../../images/icons/icon_user_2.svg'
-import icon6 from '../../images/icons/icon_users.svg'
-import icon7 from '../../images/icons/icon_pen.svg'
-import icon8 from '../../images/clients/client_logo_9.webp'
-import icon9 from '../../images/clients/client_logo_10.webp'
-import icon10 from '../../images/avatar/avatar_7.webp'
-import icon11 from '../../images/icons/icon_quote.svg'
-import logo from '../../images/site_logo/site_logo_3.svg'
-import cases from '../../images/case/case_image_4.webp'
-import MobileMenu from '../MobileMenu/MobileMenu'
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import icon1 from "../../images/icons/icon_wifi.svg";
+import icon2 from "../../images/icons/icon_dollar_2.svg";
+import icon3 from "../../images/icons/icon_chart.svg";
+import icon4 from "../../images/icons/icon_tag_2.svg";
+import icon5 from "../../images/icons/icon_user_2.svg";
+import icon6 from "../../images/icons/icon_users.svg";
+import icon7 from "../../images/icons/icon_pen.svg";
+import icon8 from "../../images/clients/client_logo_9.webp";
+import icon9 from "../../images/clients/client_logo_10.webp";
+import icon10 from "../../images/avatar/avatar_7.webp";
+import icon11 from "../../images/icons/icon_quote.svg";
+import logo from "../../images/site_logo/site_logo_3.svg";
+import cases from "../../images/case/case_image_4.webp";
+import MobileMenu from "../MobileMenu/MobileMenu";
 
 const Header = (props) => {
-  const [mobailActive, setMobailState] = useState(false)
+  const [mobailActive, setMobailState] = useState(false);
 
   const ClickHandler = () => {
-    window.scrollTo(10, 0)
-  }
+    window.scrollTo(10, 0);
+  };
 
-  const [isSticky, setSticky] = useState(false)
+  const [isSticky, setSticky] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 80) {
-        setSticky(true)
+        setSticky(true);
       } else {
-        setSticky(false)
+        setSticky(false);
       }
-    }
+    };
 
-    window.addEventListener('scroll', handleScroll)
+    window.addEventListener("scroll", handleScroll);
 
     // Clean up
     return () => {
-      window.removeEventListener('scroll', handleScroll)
-    }
-  }, [])
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <header className="site_header site_header_1">
@@ -50,7 +50,7 @@ const Header = (props) => {
       </div>
       <div
         className={`header_bottom stricky  ${
-          isSticky ? 'stricked-menu stricky-fixed' : ''
+          isSticky ? "stricked-menu stricky-fixed" : ""
         }`}
       >
         <div className="container">
@@ -149,7 +149,7 @@ const Header = (props) => {
           </div>
         </div>
         <div className="mobail-wrap">
-          <div className={`mobail-menu ${mobailActive ? 'active' : ''}`}>
+          <div className={`mobail-menu ${mobailActive ? "active" : ""}`}>
             <div className="xb-header-menu-scroll">
               <div
                 className="xb-menu-close xb-hide-xl xb-close"
@@ -167,7 +167,7 @@ const Header = (props) => {
         </div>
       </div>
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
