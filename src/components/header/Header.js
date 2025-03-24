@@ -72,22 +72,16 @@ const Header = (props) => {
                   id="main_menu_dropdown"
                 >
                   <ul className="main_menu_list unordered_list justify-content-center">
-                    <li>
-                      <Link onClick={ClickHandler} to="/">
-                        首页
-                      </Link>
+                    {/* <li>
+                      <a>首页</a>
                     </li>
                     <li>
-                      <Link onClick={ClickHandler} to="/about">
-                        关于我们
-                      </Link>
+                      <a>关于我们</a>
                     </li>
 
                     <li>
-                      <Link onClick={ClickHandler} to="/contact">
-                        联系我们
-                      </Link>
-                    </li>
+                      <a>联系我们</a>
+                    </li> */}
                     <li className="dropdown">
                       <Link
                         onClick={ClickHandler}
@@ -98,7 +92,7 @@ const Header = (props) => {
                         data-bs-toggle="dropdown"
                         aria-expanded="false"
                       >
-                        Home
+                        语言
                       </Link>
                       <ul
                         className="dropdown-menu"
