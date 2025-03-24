@@ -22,9 +22,7 @@
 	}
 	.service_content {
 		left: 0;
-		right: 0;
-		bottom: 0;
-		bottom: 0;
+		top: 200px;
 		z-index: 2;
 		padding: 40px;
 		position: absolute;
@@ -34,6 +32,7 @@
 		max-width: 360px;
 		line-height: 40px;
 		margin-bottom: 40px;
+		color: white;
 		a {
 			display: inline;
 			color: var(--bs-white);
@@ -48,10 +47,13 @@
 			}
 		}
 	}
+	.service_description {
+		margin-bottom: 30px;
+		color: white;
+	}
 	.links_wrapper {
 		display: flex;
 		align-items: center;
-		justify-content: space-between;
 	}
 	.category_btns_group {
 		gap: 10px;

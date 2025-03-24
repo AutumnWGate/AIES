@@ -402,17 +402,14 @@ Responsive For Mobile & Tablet Devices
 		columns: 1;
 	}
 	.service_block .service_content {
+		top: auto;
+		bottom: 0;
 		padding: 30px;
 	}
 	.service_block .service_title {
 		font-size: 24px;
 		line-height: 30px;
 		margin-bottom: 24px;
-	}
-	.service_block .links_wrapper {
-		gap: 24px;
-		align-items: flex-start;
-		flex-direction: column-reverse;
 	}
 	.portfolio_carousel .swiper-slide {
 		padding: 0 15px;

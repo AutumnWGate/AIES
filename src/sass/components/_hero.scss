@@ -13,6 +13,7 @@
 }
 
 .it_solution_hero_content {
+	height: 100%;
 	background-size: auto;
 	padding: 132px 220px 133px;
 	background-repeat: no-repeat;
@@ -89,9 +90,26 @@
 }
 
 .it_solution_hero_images {
+	height: 100%;
 	align-items: flex-start;
 	>li {
 		width: 50%;
+	}
+
+	li:first-child {
+		align-self: flex-start;
+	}
+
+	li:nth-child(2) {
+		align-self: flex-start;
+	}
+
+	li:nth-child(3) {
+		align-self: flex-end;
+	}
+
+	li:last-child {
+		align-self: flex-end;
 	}
 
 	.worldwide_clients {
