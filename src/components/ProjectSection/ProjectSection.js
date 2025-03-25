@@ -20,11 +20,7 @@ const ProjectSection = (props) => {
         <div className="heading_block">
           <div className="row align-items-end">
             <div className="col-lg-7">
-              <div className="heading_focus_text">
-                <span className="badge bg-secondary text-white">行业</span>
-                解决方案
-              </div>
-              <h2 className="heading_text">聚焦行业，赋能未来</h2>
+              <h2 className="heading_text">行业解决方案</h2>
               <p className="heading_description mb-0">
                 完善、成熟的多行业解决方案，赋能客户业务数智升级。
               </p>

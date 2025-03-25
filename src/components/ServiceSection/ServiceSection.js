@@ -1,20 +1,16 @@
-import React from 'react'
-import Services from '../../api/service'
-import { Link } from 'react-router-dom'
+import React from "react";
+import Services from "../../api/service";
+import { Link } from "react-router-dom";
 
 const ServiceSection = (props) => {
   const ClickHandler = () => {
-    window.scrollTo(10, 0)
-  }
+    window.scrollTo(10, 0);
+  };
 
   return (
     <section className="service_section section_space xb-hidden pb-0">
       <div className="container">
         <div className="heading_block text-center">
-          <div className="heading_focus_text">
-            我们的
-            <span className="badge bg-secondary text-white">特色</span>
-          </div>
           <h2 className="heading_text mb-0">专业服务</h2>
         </div>
 
@@ -41,7 +37,7 @@ const ServiceSection = (props) => {
                   </div>
                 </div>
               ) : (
-                ''
+                ""
               )}
             </div>
           ))}
@@ -63,7 +59,7 @@ const ServiceSection = (props) => {
         </div> */}
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default ServiceSection
+export default ServiceSection;

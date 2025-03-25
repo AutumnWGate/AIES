@@ -1,12 +1,12 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import Bg1 from '../../images/shapes/it_solution_hero_bg_1.svg'
-import Bg2 from '../../images/hero/it_solution_hero_image_2.webp'
-import heroImg from '../../images/hero/it_solution_hero_image_1.webp'
-import icon from '../../images/icons/icon_stars_trustpilot.svg'
-import avatar1 from '../../images/avatar/avatar_1.webp'
-import avatar2 from '../../images/avatar/avatar_2.webp'
-import avatar3 from '../../images/avatar/avatar_3.webp'
+import React from "react";
+import { Link } from "react-router-dom";
+import Bg1 from "../../images/shapes/it_solution_hero_bg_1.svg";
+import Bg2 from "../../images/hero/it_solution_hero_image_2.webp";
+import heroImg from "../../images/hero/it_solution_hero_image_1.webp";
+import icon from "../../images/icons/icon_stars_trustpilot.svg";
+import avatar1 from "../../images/avatar/avatar_1.webp";
+import avatar2 from "../../images/avatar/avatar_2.webp";
+import avatar3 from "../../images/avatar/avatar_3.webp";
 
 const Hero = () => {
   return (
@@ -36,35 +36,12 @@ const Hero = () => {
                   我们为客户提供定制化的AI解决方案，包含金融、制造、零售、医疗等多个行业。
                 </li>
               </ul>
-              <ul className="btns_group unordered_list p-0 justify-content-center">
-                {/* <li>
-                  <Link className="btn" to="/pricing">
-                    <span className="btn_label" data-text="Get Started">
-                      Get Started
-                    </span>
-                    <span className="btn_icon">
-                      <i className="fa-solid fa-arrow-up-right"></i>
-                    </span>
-                  </Link>
-                </li> */}
-                <li>
-                  <div className="review_short_info">
-                    <div className="d-flex">
-                      <img src={icon} alt="Techco - Trustpilot Review" />
-                      <span>4.8</span>
-                    </div>
-                    <div className="review_counter">
-                      <b>200+</b> 好评
-                    </div>
-                  </div>
-                </li>
-              </ul>
             </div>
           </div>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

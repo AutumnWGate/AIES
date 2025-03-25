@@ -1,39 +1,39 @@
-import React from 'react'
-import PartnerSection from '../PartnerSection'
-import CountUp from 'react-countup'
-import sIcon1 from '../../images/icons/icon_head.svg'
-import sIcon2 from '../../images/icons/icon_check.svg'
-import sIcon3 from '../../images/icons/icon_like.svg'
-import sIcon4 from '../../images/icons/icon_dart_board.svg'
-import Bg from '../../images/shapes/bg_pattern_1.svg'
-import fimg from '../../images/about/about_image_1.webp'
+import React from "react";
+import PartnerSection from "../PartnerSection";
+import CountUp from "react-countup";
+import sIcon1 from "../../images/icons/icon_head.svg";
+import sIcon2 from "../../images/icons/icon_check.svg";
+import sIcon3 from "../../images/icons/icon_like.svg";
+import sIcon4 from "../../images/icons/icon_dart_board.svg";
+import Bg from "../../images/shapes/bg_pattern_1.svg";
+import fimg from "../../images/about/about_image_1.webp";
 
 const FunFact = [
   {
-    title: '10',
-    subTitle: '行业经验',
-    symbol: '+',
+    title: "10",
+    subTitle: "行业经验",
+    symbol: "+",
     icon: sIcon1,
   },
   {
-    title: '200',
-    subTitle: '项目案例',
-    symbol: '+',
+    title: "200",
+    subTitle: "项目案例",
+    symbol: "+",
     icon: sIcon2,
   },
   {
-    title: '100',
-    subTitle: '合作伙伴信任我们',
-    symbol: '+',
+    title: "100",
+    subTitle: "合作伙伴信任我们",
+    symbol: "+",
     icon: sIcon3,
   },
   {
-    title: '100',
-    subTitle: '项目交付',
-    symbol: '%',
+    title: "100",
+    subTitle: "项目交付",
+    symbol: "%",
     icon: sIcon4,
   },
-]
+];
 
 const FeaturesSection = (props) => {
   return (
@@ -44,10 +44,7 @@ const FeaturesSection = (props) => {
       <div className="container">
         <div className="section_space pt-0">
           <div className="heading_block text-center">
-            <div className="heading_focus_text mb-0">
-              我们合作的
-              <span className="badge bg-secondary text-white">品牌</span>
-            </div>
+            <h2 className="heading_text">合作品牌</h2>
           </div>
           <PartnerSection />
         </div>
@@ -91,7 +88,7 @@ const FeaturesSection = (props) => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default FeaturesSection
+export default FeaturesSection;

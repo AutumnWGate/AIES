@@ -4,7 +4,8 @@ import Bg from "../../images/shapes/bg_pattern_3.svg";
 import icon1 from "../../images/icons/icon_mail.svg";
 import icon2 from "../../images/icons/icon_calling.svg";
 import icon3 from "../../images/icons/icon_map_mark.svg";
-import icon4 from "../../images/icons/icon_mail_2.svg";
+import icon4 from "../../images/icons/icon_x.svg";
+import icon5 from "../../images/icons/icon_wechat.svg";
 import Services from "../../api/service";
 
 const ClickHandler = () => {
@@ -27,7 +28,7 @@ const Footer = (props) => {
               </div>
               <div className="iconbox_content">
                 <h3 className="iconbox_title">邮箱</h3>
-                <p className="mb-0">Techco@gmail.com</p>
+                <p className="mb-0">xxxxxxxx@aies.online</p>
               </div>
             </div>
             <div className="iconbox_block layout_icon_left">
@@ -36,7 +37,27 @@ const Footer = (props) => {
               </div>
               <div className="iconbox_content">
                 <h3 className="iconbox_title">电话</h3>
-                <p className="mb-0">+(1) 1230 452 8597</p>
+                <p className="mb-0">香港 +85257905434</p>
+                <p className="mb-0">大陆 +8618038010817</p>
+              </div>
+            </div>
+
+            <div className="iconbox_block layout_icon_left">
+              <div className="iconbox_icon">
+                <img src={icon5} alt="Map Mark Check SVG Icon" />
+              </div>
+              <div className="iconbox_content">
+                <h3 className="iconbox_title">微信</h3>
+                <p className="mb-0">18038010817</p>
+              </div>
+            </div>
+            <div className="iconbox_block layout_icon_left">
+              <div className="iconbox_icon">
+                <img src={icon4} alt="Map Mark Check SVG Icon" />
+              </div>
+              <div className="iconbox_content">
+                <h3 className="iconbox_title">X</h3>
+                <p className="mb-0">https://x.com/Autumn_W_Gate</p>
               </div>
             </div>
             <div className="iconbox_block layout_icon_left">
@@ -45,7 +66,9 @@ const Footer = (props) => {
               </div>
               <div className="iconbox_content">
                 <h3 className="iconbox_title">公司地址</h3>
-                <p className="mb-0">深圳市龙华区</p>
+                <p className="mb-0">
+                  广东省深圳市龙华区民治街道民强社区深宝茂大厦911
+                </p>
               </div>
             </div>
           </div>
@@ -197,7 +220,7 @@ const Footer = (props) => {
       <div className="footer_bottom">
         <div className="container d-md-flex align-items-md-center justify-content-md-between">
           <p className="copyright_text m-0">
-            Copyright © 2024 Techco, All rights reserved.
+            Copyright © 2024 AIES, All rights reserved.
           </p>
           <p className="copyright_text m-0">
             Developed by{" "}
