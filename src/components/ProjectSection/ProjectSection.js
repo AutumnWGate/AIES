@@ -1,20 +1,21 @@
-import React from "react";
-import Project from "../../api/project";
-import { Link } from "react-router-dom";
-import { Pagination, A11y } from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/pagination";
+import React from 'react'
+import Project from '../../api/project'
+import { Link } from 'react-router-dom'
+import { FormattedMessage } from 'react-intl'
+import { Pagination, A11y } from 'swiper'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import 'swiper/css'
+import 'swiper/css/pagination'
 
 const ProjectSection = (props) => {
   const ClickHandler = () => {
-    window.scrollTo(10, 0);
-  };
+    window.scrollTo(10, 0)
+  }
 
   return (
     <section
       className="portfolio_section xb-hidden section_space"
-      style={{ background: "#e0ecfc", paddingBottom: "20px", marginTop: 30 }}
+      style={{ background: '#e0ecfc', paddingBottom: '20px', marginTop: 30 }}
     >
       <div className="container">
         <div className="heading_block">
@@ -70,7 +71,7 @@ const ProjectSection = (props) => {
         </Swiper>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default ProjectSection;
+export default ProjectSection

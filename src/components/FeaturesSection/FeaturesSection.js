@@ -1,39 +1,40 @@
-import React from "react";
-import PartnerSection from "../PartnerSection";
-import CountUp from "react-countup";
-import sIcon1 from "../../images/icons/icon_head.svg";
-import sIcon2 from "../../images/icons/icon_check.svg";
-import sIcon3 from "../../images/icons/icon_like.svg";
-import sIcon4 from "../../images/icons/icon_dart_board.svg";
-import Bg from "../../images/shapes/bg_pattern_1.svg";
-import fimg from "../../images/about/about_image_1.webp";
+import React from 'react'
+import { FormattedMessage } from 'react-intl'
+import PartnerSection from '../PartnerSection'
+import CountUp from 'react-countup'
+import sIcon1 from '../../images/icons/icon_head.svg'
+import sIcon2 from '../../images/icons/icon_check.svg'
+import sIcon3 from '../../images/icons/icon_like.svg'
+import sIcon4 from '../../images/icons/icon_dart_board.svg'
+import Bg from '../../images/shapes/bg_pattern_1.svg'
+import fimg from '../../images/about/about_image_1.webp'
 
 const FunFact = [
   {
-    title: "10",
-    subTitle: "行业经验",
-    symbol: "+",
+    title: '10',
+    subTitle: <FormattedMessage id="brands.subt1" />,
+    symbol: '+',
     icon: sIcon1,
   },
   {
-    title: "200",
-    subTitle: "项目案例",
-    symbol: "+",
+    title: '200',
+    subTitle: <FormattedMessage id="brands.subt2" />,
+    symbol: '+',
     icon: sIcon2,
   },
   {
-    title: "100",
-    subTitle: "合作伙伴信任我们",
-    symbol: "+",
+    title: '100',
+    subTitle: <FormattedMessage id="brands.subt3" />,
+    symbol: '+',
     icon: sIcon3,
   },
   {
-    title: "100",
-    subTitle: "项目交付",
-    symbol: "%",
+    title: '100',
+    subTitle: <FormattedMessage id="brands.subt4" />,
+    symbol: '%',
     icon: sIcon4,
   },
-];
+]
 
 const FeaturesSection = (props) => {
   return (
@@ -44,7 +45,9 @@ const FeaturesSection = (props) => {
       <div className="container">
         <div className="section_space pt-0">
           <div className="heading_block text-center">
-            <h2 className="heading_text">合作品牌</h2>
+            <h2 className="heading_text">
+              <FormattedMessage id="brands" />
+            </h2>
           </div>
           <PartnerSection />
         </div>
@@ -79,8 +82,8 @@ const FeaturesSection = (props) => {
               </div>
               <div className="content_wrap">
                 <h3 className="title_text mb-0">
-                  <b className="d-block">50+</b> 专业技术人员，其中 80%
-                  持有行业顶级认证。
+                  <b className="d-block">50+</b>
+                  <FormattedMessage id="brands.employee" />
                 </h3>
               </div>
             </div>
@@ -88,7 +91,7 @@ const FeaturesSection = (props) => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default FeaturesSection;
+export default FeaturesSection

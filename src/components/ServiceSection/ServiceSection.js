@@ -1,17 +1,20 @@
-import React from "react";
-import Services from "../../api/service";
-import { Link } from "react-router-dom";
+import React from 'react'
+import { FormattedMessage } from 'react-intl'
+import Services from '../../api/service'
+import { Link } from 'react-router-dom'
 
 const ServiceSection = (props) => {
   const ClickHandler = () => {
-    window.scrollTo(10, 0);
-  };
+    window.scrollTo(10, 0)
+  }
 
   return (
     <section className="service_section section_space xb-hidden pb-0">
       <div className="container">
         <div className="heading_block text-center">
-          <h2 className="heading_text mb-0">专业服务</h2>
+          <h2 className="heading_text mb-0">
+            <FormattedMessage id="service" />
+          </h2>
         </div>
 
         <div className="row">
@@ -37,7 +40,7 @@ const ServiceSection = (props) => {
                   </div>
                 </div>
               ) : (
-                ""
+                ''
               )}
             </div>
           ))}
@@ -59,7 +62,7 @@ const ServiceSection = (props) => {
         </div> */}
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default ServiceSection;
+export default ServiceSection
