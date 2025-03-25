@@ -21,8 +21,8 @@ const HomePage = () => {
         <main className="page_content">
           <Hero />
           <FeaturesSection />
-          <About />
-          <PolicySection />
+          {/* <About /> */}
+          {/* <PolicySection /> */}
           <ServiceSection />
           <ProjectSection />
           {/* <Testimonial />
