@@ -48,5 +48,42 @@ const en = {
   'service5.label1': 'Intelligent Recommendations.',
   'service5.label2': '个性化推荐',
   'service5.label3': '行为分析',
+
+  solution: 'Industry Solutions',
+  'solution.title':
+    "Comprehensive and mature multi-industry solutions to empower clients' digital and intelligent business transformation.",
+  industry1: 'Financial Industry',
+  'industry1.label1': 'AI-Powered Risk Management',
+  'industry1.label2': 'Algorithmic Trading',
+
+  industry2: 'Manufacturing Industry',
+  'industry2.label1': 'AI-Based Quality Control',
+  'industry2.label2': 'Predictive Maintenance',
+  'industry2.label3': 'Smart Warehousing',
+
+  industry3: 'Retail Industry',
+  'industry3.label1': 'AI-Powered Recommendation System',
+  'industry3.label2': 'Inventory Management',
+  'industry3.label3': 'Customer Behavior Analysis',
+
+  industry4: 'Healthcare Industry',
+  'industry4.label1': 'Disease Prediction',
+  'industry4.label2': 'Medical Imaging Analysis',
+  'industry4.label3': 'Personalized Treatment',
+
+  'contact.title': "Ready to Work,Let's Chat",
+  'contact.subtitle':
+    'Our team of experts is ready to collaborate with you every step of the way, from initial consultation to implementation.',
+
+  email: 'Email',
+  phone: 'Phone',
+  phone1: 'Hong Kong',
+  phone2: 'Mainland China',
+  wechat: 'WeChat',
+  address: 'Address',
+  'address.detail':
+    'Room 911, Shenbao Mao Building, Minqiang Community, Minzhi Subdistrict, Longhua District, Shenzhen City, Guangdong Province, China',
+
+  copyright: 'Copyright © AIES, All rights reserved.',
 }
 export default en

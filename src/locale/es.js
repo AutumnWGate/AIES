@@ -51,5 +51,42 @@ const es = {
   'service5.label1': 'Recomendaciones Inteligentes.',
   'service5.label2': '个性化推荐',
   'service5.label3': '行为分析',
+
+  solution: 'Soluciones para la Industria',
+  'solution.title':
+    'Soluciones integrales y maduras para múltiples industrias que potencian la transformación digital e inteligente del negocio de los clientes.',
+  industry1: 'Industria Financiera',
+  'industry1.label1': 'Gestión de Riesgos con IA',
+  'industry1.label2': 'Trading Automatizado',
+
+  industry2: 'Industria Manufacturera',
+  'industry2.label1': 'Control de Calidad con IA',
+  'industry2.label2': 'Mantenimiento Predictivo',
+  'industry2.label3': 'Almacenamiento Inteligente',
+
+  industry3: 'Sector Minorista',
+  'industry3.label1': 'Recomendación Inteligente',
+  'industry3.label2': 'Gestión de Inventarios',
+  'industry3.label3': 'Estudio de Conducta del Consumidor',
+
+  industry4: 'Industria Médica',
+  'industry4.label1': 'Predicción de Enfermedades',
+  'industry4.label2': 'Análisis de Imágenes Médicas',
+  'industry4.label3': 'Tratamiento Personalizado',
+
+  'contact.title': 'Listos para trabajar, hablemos.',
+  'contact.subtitle':
+    'Nuestro equipo de expertos está listo para colaborar con usted en cada etapa, desde la consulta inicial hasta la implementación.',
+
+  email: 'Email ',
+  phone: 'Teléfono',
+  phone1: 'Hong Kong',
+  phone2: 'China continental',
+  wechat: 'WeChat',
+  address: 'Dirección',
+  'address.detail':
+    'Habitación 911, Edificio Shenbao Mao, Comunidad Minqiang, Subdistrito Minzhi, Distrito Longhua, Ciudad Shenzhen, Provincia Guangdong, China',
+
+  copyright: 'Derechos de autor © AIES. Todos los derechos reservados.',
 }
 export default es

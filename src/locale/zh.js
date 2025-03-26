@@ -47,5 +47,41 @@ const zh = {
   'service5.label1': '数据洞察',
   'service5.label2': '个性化推荐',
   'service5.label3': '行为分析',
+
+  solution: '行业解决方案',
+  'solution.title': '完善、成熟的多行业解决方案，赋能客户业务数智升级。',
+
+  industry1: '金融行业',
+  'industry1.label1': '智能风控',
+  'industry1.label2': '自动化交易',
+
+  industry2: '制造业',
+  'industry2.label1': '智能质检',
+  'industry2.label2': '预测性维护',
+  'industry2.label3': '智能仓储',
+
+  industry3: '零售行业',
+  'industry3.label1': '智能推荐',
+  'industry3.label2': '库存管理',
+  'industry3.label3': '客户行为分析',
+
+  industry4: '医疗行业',
+  'industry4.label1': '疾病预测',
+  'industry4.label2': '影像分析',
+  'industry4.label3': '个性化诊疗',
+
+  'contact.title': '我们已准备就绪，期待与您交流',
+  'contact.subtitle':
+    '我们的专家团队随时准备与您携手合作，从方案咨询到实施落地，全程为您保驾护航。',
+
+  email: '邮箱',
+  phone: '电话',
+  phone1: '香港',
+  phone2: '大陆',
+  wechat: '微信',
+  address: '公司地址',
+  'address.detail': '广东省深圳市龙华区民治街道民强社区深宝茂大厦911',
+
+  copyright: '版权所有 © AIES',
 }
 export default zh

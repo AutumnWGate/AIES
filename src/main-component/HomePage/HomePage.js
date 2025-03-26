@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react'
+import { FormattedMessage } from 'react-intl'
 import Header from '../../components/header/Header'
 import Hero from '../../components/hero/hero'
 import FeaturesSection from '../../components/FeaturesSection/FeaturesSection'

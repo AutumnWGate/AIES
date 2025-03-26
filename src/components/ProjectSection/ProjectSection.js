@@ -21,9 +21,11 @@ const ProjectSection = (props) => {
         <div className="heading_block">
           <div className="row align-items-end">
             <div className="col-lg-7">
-              <h2 className="heading_text">行业解决方案</h2>
+              <h2 className="heading_text">
+                <FormattedMessage id="solution" />
+              </h2>
               <p className="heading_description mb-0">
-                完善、成熟的多行业解决方案，赋能客户业务数智升级。
+                <FormattedMessage id="solution.title" />
               </p>
             </div>
           </div>

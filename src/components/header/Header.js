@@ -13,7 +13,8 @@ import icon8 from '../../images/clients/client_logo_9.webp'
 import icon9 from '../../images/clients/client_logo_10.webp'
 import icon10 from '../../images/avatar/avatar_7.webp'
 import icon11 from '../../images/icons/icon_quote.svg'
-import logo from '../../images/site_logo/site_logo_3.svg'
+import logo from '../../images/site_logo/site_logo_3.png'
+import lang from '../../images/icons/language.svg'
 import cases from '../../images/case/case_image_4.webp'
 import MobileMenu from '../MobileMenu/MobileMenu'
 
@@ -112,7 +113,7 @@ const Header = (props) => {
             </div>
             <ul className="header_btns_group unordered_list justify-content-end">
               <li>
-                <button
+                {/* <button
                   className="mobile_menu_btn"
                   onClick={() => setMobailState(!mobailActive)}
                   type="button"
@@ -121,8 +122,12 @@ const Header = (props) => {
                   aria-expanded="false"
                   aria-label="Toggle navigation"
                 >
-                  <i className="far fa-bars"></i>
-                </button>
+                </button> */}
+                <img
+                  src={lang}
+                  style={{ width: '50px' }}
+                  onClick={() => setMobailState(!mobailActive)}
+                />
               </li>
             </ul>
           </div>
@@ -135,7 +140,7 @@ const Header = (props) => {
                 onClick={() => setMobailState(!mobailActive)}
               ></div>
               <nav className="xb-header-nav">
-                <MobileMenu />
+                <MobileMenu onClose={() => setMobailState(false)} />
               </nav>
             </div>
           </div>

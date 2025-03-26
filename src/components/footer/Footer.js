@@ -1,20 +1,21 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import Bg from "../../images/shapes/bg_pattern_3.svg";
-import icon1 from "../../images/icons/icon_mail.svg";
-import icon2 from "../../images/icons/icon_calling.svg";
-import icon3 from "../../images/icons/icon_map_mark.svg";
-import icon4 from "../../images/icons/icon_x.svg";
-import icon5 from "../../images/icons/icon_wechat.svg";
-import Services from "../../api/service";
+import React from 'react'
+import { Link } from 'react-router-dom'
+import { FormattedMessage } from 'react-intl'
+import Bg from '../../images/shapes/bg_pattern_3.svg'
+import icon1 from '../../images/icons/icon_mail.svg'
+import icon2 from '../../images/icons/icon_calling.svg'
+import icon3 from '../../images/icons/icon_map_mark.svg'
+import icon4 from '../../images/icons/icon_x.svg'
+import icon5 from '../../images/icons/icon_wechat.svg'
+import Services from '../../api/service'
 
 const ClickHandler = () => {
-  window.scrollTo(10, 0);
-};
+  window.scrollTo(10, 0)
+}
 
 const SubmitHandler = (e) => {
-  e.preventDefault();
-};
+  e.preventDefault()
+}
 
 const Footer = (props) => {
   return (
@@ -27,7 +28,9 @@ const Footer = (props) => {
                 <img src={icon1} alt="Mail SVG Icon" />
               </div>
               <div className="iconbox_content">
-                <h3 className="iconbox_title">邮箱</h3>
+                <h3 className="iconbox_title">
+                  <FormattedMessage id="email" />
+                </h3>
                 <p className="mb-0">xxxxxxxx@aies.online</p>
               </div>
             </div>
@@ -36,9 +39,15 @@ const Footer = (props) => {
                 <img src={icon2} alt="Calling Check SVG Icon" />
               </div>
               <div className="iconbox_content">
-                <h3 className="iconbox_title">电话</h3>
-                <p className="mb-0">香港 +85257905434</p>
-                <p className="mb-0">大陆 +8618038010817</p>
+                <h3 className="iconbox_title">
+                  <FormattedMessage id="phone" />
+                </h3>
+                <p className="mb-0">
+                  <FormattedMessage id="phone1" /> +85257905434
+                </p>
+                <p className="mb-0">
+                  <FormattedMessage id="phone2" /> +8618038010817
+                </p>
               </div>
             </div>
 
@@ -47,7 +56,9 @@ const Footer = (props) => {
                 <img src={icon5} alt="Map Mark Check SVG Icon" />
               </div>
               <div className="iconbox_content">
-                <h3 className="iconbox_title">微信</h3>
+                <h3 className="iconbox_title">
+                  <FormattedMessage id="wechat" />
+                </h3>
                 <p className="mb-0">18038010817</p>
               </div>
             </div>
@@ -65,9 +76,11 @@ const Footer = (props) => {
                 <img src={icon3} alt="Map Mark Check SVG Icon" />
               </div>
               <div className="iconbox_content">
-                <h3 className="iconbox_title">公司地址</h3>
+                <h3 className="iconbox_title">
+                  <FormattedMessage id="address" />
+                </h3>
                 <p className="mb-0">
-                  广东省深圳市龙华区民治街道民强社区深宝茂大厦911
+                  <FormattedMessage id="address.detail" />
                 </p>
               </div>
             </div>
@@ -220,18 +233,13 @@ const Footer = (props) => {
       <div className="footer_bottom">
         <div className="container d-md-flex align-items-md-center justify-content-md-between">
           <p className="copyright_text m-0">
-            Copyright © 2024 AIES, All rights reserved.
+            <FormattedMessage id="copyright" />
           </p>
-          <p className="copyright_text m-0">
-            Developed by{" "}
-            <Link onClick={ClickHandler} to="/">
-              AIES
-            </Link>
-          </p>
+          {/* <p className="copyright_text m-0">Developed by AIES</p> */}
         </div>
       </div>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer
